@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/../test" />
     <file type="web" url="file://$PROJECT_DIR$/ExperimentOne" />
     <file type="web" url="file://$PROJECT_DIR$/ExperimentThree" />
     <file type="web" url="file://$PROJECT_DIR$/ExperimentTwo" />
@@ -10,6 +11,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../test/pom.xml" />
       </list>
     </option>
   </component>

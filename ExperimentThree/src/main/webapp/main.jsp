@@ -9,11 +9,23 @@
 <body>
 <%
 	String username=(String)session.getAttribute("username");  //获取保存在session范围内的用户名
-	if(username!=null)
-		out.print("登陆成功！欢迎"+username+"浏览站点！");
+	if(username!=null) {
+		out.print("登陆成功！欢迎" + username + "浏览站点！");
+	}
 	else
 		response.sendRedirect("login1.jsp");
 %>
+<%
+	if(application.getAttribute("count")==null){
+		application.setAttribute("count",0);
+	}
+%>
+<%
+	int count=Integer.parseInt(application.getAttribute("count").toString());
+	count++;
+	application.setAttribute("count", count);
+%>
+<div class="p3">访问次数：<%=application.getAttribute("count") %></div>
 <a href="login1.jsp">[退出]</a>
 </body>
 </html>
