@@ -7,7 +7,7 @@
    // 获取最后访问页面的时间
    Date lastAccessTime = new Date(session.getLastAccessedTime());
 
-   String title = "再次访问菜鸟教程实例";
+   String title = "再次访问实例";
    Integer visitCount = new Integer(0);
    String visitCountKey = new String("visitCount");
    String userIDKey = new String("userID");

@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>菜鸟教程(runoob.com)</title>
+<title>实例</title>
 </head>
 <body>
 <h2>HTTP 头部请求实例</h2>
