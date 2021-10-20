@@ -19,9 +19,7 @@ import java.util.Enumeration;
  * @author: RuoBing
  * @create: 2021-10-20 22:26
  **/
-/**
- * Servlet implementation class ReadParams
- */
+
 public class ShowParameterServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
@@ -41,7 +39,7 @@ public class ShowParameterServlet extends HttpServlet {
         // ������Ӧ��������
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
-        String title = "��ȡ���еı�����";
+        String title = "读取所有请求参数";
         String docType =
                 "<!doctype html public \"-//w3c//dtd html 4.0 " +
                         "transitional//en\">\n";
@@ -52,7 +50,7 @@ public class ShowParameterServlet extends HttpServlet {
                 "<h1 align=\"center\">" + title + "</h1>\n" +
                 "<table width=\"100%\" border=\"1\" align=\"center\">\n" +
                 "<tr bgcolor=\"#949494\">\n" +
-                "<th>ѧ��</th><th>�Ƿ�ѡ��</th>\n"+
+                "<th>参数名字</th><th>参数值</th>\n"+
                 "</tr>\n");
 
         Enumeration paramNames = request.getParameterNames();
@@ -62,16 +60,14 @@ public class ShowParameterServlet extends HttpServlet {
             out.print("<tr><td>" + paramName + "</td>\n");
             String[] paramValues =
                     request.getParameterValues(paramName);
-            // ��ȡ����ֵ������
             if (paramValues.length == 1) {
                 String paramValue = paramValues[0];
                 if (paramValue.length() == 0) {
-                    out.println("<td><i>û��ֵ</i></td>");
+                    out.println("<td><i>No Valueֵ</i></td>");
                 } else {
                     out.println("<td>" + paramValue + "</td>");
                 }
             } else {
-                // ��ȡ���ֵ������
                 out.println("<td><ul>");
                 for(int i=0; i < paramValues.length; i++) {
                     out.println("<li>" + paramValues[i]);

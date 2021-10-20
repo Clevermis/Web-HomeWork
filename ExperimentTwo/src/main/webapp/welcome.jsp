@@ -7,7 +7,7 @@
 <title>Welcome</title>
 </head>
 <body>
-Welocome!!Djc<br/>
+Welcome<br/>
 <br/>
 <input type="button" onclick="javascript:window.location.href='login.html';" value="Exit">
 </body>

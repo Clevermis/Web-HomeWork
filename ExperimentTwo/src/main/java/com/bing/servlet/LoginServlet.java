@@ -40,10 +40,10 @@ public class LoginServlet extends HttpServlet {
         response.setContentType("text/html;charset=utf-8");
         String username = request.getParameter("username");
         String password = request.getParameter("password");
-        if (("Dcj").equals(username)&&("123").equals(password)) {
-            response.sendRedirect("E:\\idea\\Web-HomeWork\\ExperimentTwo\\src\\main\\webapp\\welcome.jsp");
+        if (("nzb").equals(username)&&("123").equals(password)) {
+            response.sendRedirect("/welcome.jsp");
         } else {
-            response.sendRedirect("E:\\idea\\Web-HomeWork\\ExperimentTwo\\src\\main\\webapp\\loginfail.jsp");
+            response.sendRedirect("/loginfail.jsp");
         }
     }
     /**
