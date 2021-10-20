@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+* @program: Web-HomeWork
+* @description:
+实验1.5 使用Javascript进行前端验证
+实验内容：设计简单的用户注册页面，其中包括“请输入密码”和“请再次输入密码”两个文本框，使用Javascript对“请输入密码”和“请再次输入密码”两个文本框的内容进行验证，如果两个文本框的内容不一样则显示“两次输入的密码不一致！”对话框。
+实验步骤：
+（1）设计简单的用户注册页面，其中包括“请输入密码”和“请再次输入密码”两个文本框；
+（2）使用Javascript对“请输入密码”和“请再次输入密码”两个文本框的内容进行验证，如果两个文本框的内容不一样则显示“两次输入的密码不一致！”对话框。
+* @author: RuoBing
+* @create: 2021-10-20 22:18
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+</head>
+<body>
+<h2 align="center">用户注册</h2>
+<table align="center">
+  <tr>
+    <td align="right">用户名：</td>
+    <td><input type="text" name="username" /></td>
+  </tr>
+  <tr>
+    <td align="right">密码：</td>
+    <td><input type="password" id="passwd" name="passwd" /></td>
+  </tr>
+  <tr>
+    <td align="right">重复密码：</td>
+    <td><input type="password" id="repasswd" name="repasswd" /></td>
+  </tr>
+  <tr>
+    <td><input type="button" value="注册"  onclick="f();" /></td>
+  </tr>
+</table>
+<script src="../Js/Exp5-1.js"></script>
+</body>
+</html>

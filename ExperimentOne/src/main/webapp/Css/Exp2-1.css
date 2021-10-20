@@ -1,0 +1,28 @@
+.cell{
+    text-align:center;
+    border:1px solid #000000;
+    width:100px;
+    height:70px;
+    background-color:#66ccff;
+}
+.cell:hover{background-color:red;}
+.firstline{
+    text-align:center;
+    border:1px solid #000000;
+    width:100px;
+    height:30px;
+    background-color:#ffff00;
+}
+.firstcolumn{
+    text-align:center;
+    border:1px solid #000000;
+    width:120px;
+    height:70px;
+    background-color:#70DB93;
+}
+.null{
+    border:1px solid #545454;
+    width:100px;
+    height:70px;
+    background-color:#ffffff;
+}

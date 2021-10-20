@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+* @program: Web-HomeWork
+* @description:
+实验1.2 使用CSS控制表格设计出课程表
+实验内容：编写一个网页，内容为本学期本班的课程表，并使用CSS设计课程表的显示样式
+实验步骤：
+（1）编写一个网页，内容为课程表表格；
+（2）使用CSS美化课程表表格；
+（3）使用CSS控制表格，表格行背景颜色随鼠标移动而改变。
+* @author: RuoBing
+* @create: 2021-10-20 21:38
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>课程表</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Css/Exp2-1.css" type="text/css" />
+</head>
+<body>
+<div class="container" css="">
+    <h2 align="center">课表</h2>
+    <table class="table table-bordered">
+        <tr class="firstline">
+            <td>时间</td>
+            <td>周一</td>
+            <td>周二</td>
+            <td>周三</td>
+            <td>周四</td>
+            <td>周五</td>
+        </tr>
+        <tr>
+            <td class="firstcolumn">一</td>
+            <td class="cell">单片机原理与应用<br />@XB106</td>
+            <td class="cell">Web程序设计<br />@XD505</td>
+            <td class="cell">操作系统<br />@XD409</td>
+            <td class="cell">Web程序设计<br />@XC308</td>
+            <td class="null"></td>
+        </tr>
+        <tr>
+            <td class="firstcolumn">二</td>
+            <td class="cell">形式与政策<br />@XB2</td>
+            <td class="cell">编译原理<br />@XD512</td>
+            <td class="cell">单片机原理<br />@XC513</td>
+            <td class="cell">编译原理<br />@XD108</td>
+            <td class="cell">计算机网络<br />@XC407</td>
+        </tr>
+        <tr>
+            <td class="firstcolumn">三</td>
+            <td class="cell">操作系统<br />@XA109</td>
+            <td class="cell">就业与创业<br />@XC307</td>
+            <td class="cell">计算机网络<br />@XC207</td>
+            <td class="null"></td>
+            <td class="null"></td>
+        </tr>
+        <tr>
+            <td class="firstcolumn">四</td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+            <td class="null"></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
