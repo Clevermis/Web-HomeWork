@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="/index.jsp" method="post">
+<form action="index.jsp" method="get">
 用户名称：<input type="text" name="name"><br />
 用户电话：<input type="text" name="phone"><br />
 <input type="submit" value="登陆">
