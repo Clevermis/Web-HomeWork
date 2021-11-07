@@ -41,9 +41,9 @@ public class LoginServlet extends HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         if (("nzb").equals(username)&&("123").equals(password)) {
-            response.sendRedirect("/welcome.jsp");
+            response.sendRedirect("http://localhost:8080/welcome.jsp");
         } else {
-            response.sendRedirect("/loginfail.jsp");
+            response.sendRedirect("http://localhost:8080/loginfail.jsp");
         }
     }
     /**

@@ -36,7 +36,6 @@ public class ShowParameterServlet extends HttpServlet {
      */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // ������Ӧ��������
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         String title = "读取所有请求参数";
@@ -54,7 +53,6 @@ public class ShowParameterServlet extends HttpServlet {
                 "</tr>\n");
 
         Enumeration paramNames = request.getParameterNames();
-
         while(paramNames.hasMoreElements()) {
             String paramName = (String)paramNames.nextElement();
             out.print("<tr><td>" + paramName + "</td>\n");

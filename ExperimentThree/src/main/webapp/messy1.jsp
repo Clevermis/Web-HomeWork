@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="/messy2.jsp" method="post">
+<form action="http://localhost:8080/ExperimentThree_war/messy2.jsp" method="post">
 用户名称：<input type="text" name="name"><br />
 用户电话：<input type="text" name="phone"><br />
 <input type="submit" value="登陆">

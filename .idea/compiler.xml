@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ExperimentTwo" />
-        <module name="test" />
         <module name="ExperimentThree" />
         <module name="ExperimentOne" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="test" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>

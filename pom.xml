@@ -24,6 +24,13 @@
             <artifactId>javax.servlet.jsp-api</artifactId>
             <version>2.3.3</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.gitlab.cdc-java.util/cdc-util-core -->
+        <dependency>
+            <groupId>com.gitlab.cdc-java.util</groupId>
+            <artifactId>cdc-util-core</artifactId>
+            <version>0.11.0</version>
+        </dependency>
+
     </dependencies>
 
     <build>
